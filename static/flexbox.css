@@ -1,0 +1,77 @@
+
+.box {
+    display: flex;
+}
+
+body {
+  flex-direction: column;
+  background-color:gray;
+}
+
+ul{
+  justify-content: center;
+}
+
+li {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: blue;
+  list-style-type: none;
+}
+
+header {
+  height: 500px;
+  background-image: url(https://media.istockphoto.com/id/504264043/vector/seamless-blue-pattern-with-dogs-symbols-vector-illustration.jpg?s=612x612&w=0&k=20&c=3uYgbNDiuYwtKVlnZ4CvcRdujtPCEIaPX3mfzMhmFeU=);
+  background-size:contain;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  color:gold;
+}
+
+main {
+  height: 1000px;
+  flex-direction: column;
+}
+
+#content{
+  border: 5px solid blue;
+  margin: 25px;
+  height: 450px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  max-height: 100%;
+}
+
+h3 {
+  color: blue;
+  height: min-content;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+
+  }
+  li {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  img {
+    max-width: 50%;
+  }
+}
